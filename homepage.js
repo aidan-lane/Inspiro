@@ -1,8 +1,12 @@
 // handle html inject setup
 const parentDiv = document.getElementById("lga");
 var injection = document.createElement("div");
+injection.className = "quote";
 injection.innerHTML = "Sorry, no quote could be retrieved...";
 parentDiv.appendChild(injection);
+
+// shift search form down
+var search = document.getElementById("searchform");
 
 // send quote request to REST API
 const URL = "https://quotes.rest/qod";
