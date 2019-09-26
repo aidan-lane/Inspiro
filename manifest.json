@@ -1,0 +1,21 @@
+{
+    "name": "Inspiro",
+    "description": "Inspirational Quotes on the Google homepage!",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "<https://www.google.com>"
+            ],
+            "js": ["homepage.js"],
+            "css": ["homepage.css"]
+        }
+    ],
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs",
+        "storage"
+    ] 
+}
