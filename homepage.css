@@ -1,13 +1,18 @@
 .quote {
-    color: #ff00ff;
+    color: #FF4848;
     word-wrap: break-word;
     width: 50%;
     font-size: 120%;
-    font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
-    padding-top: 10px
+    padding-top: 0.3%
+}
+
+.author {
+    color: #FF4848;
+    font-size: 130%;
+    padding-top: 0.3%;
 }
 
 .jhp {
-    padding-top: 5%
+    padding-top: 4.5%
 }
