@@ -17,9 +17,9 @@ var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200) {
        var parsed = JSON.parse(this.responseText);
-       console.log(parsed);
        injection.innerHTML = parsed.contents.quotes[0].quote;
        author.innerHTML = parsed.contents.quotes[0].author;
+       injection.innerHTML.style.color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     } 
 }
 request.open("GET", URL, true);
