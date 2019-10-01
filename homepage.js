@@ -19,7 +19,9 @@ request.onreadystatechange = function() {
        var parsed = JSON.parse(this.responseText);
        injection.innerHTML = parsed.contents.quotes[0].quote;
        author.innerHTML = parsed.contents.quotes[0].author;
-       injection.innerHTML.style.color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+       var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+       injection.innerHTML.style.color = color;
+       author.innerHTML.style.color = color;
     } 
 }
 request.open("GET", URL, true);
